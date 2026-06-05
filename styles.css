@@ -42,11 +42,11 @@ footer {
   text-align: center;
   font-size: clamp(0.8rem, 1.2vw + 0.5rem, 0.95rem);
   line-height: 1.6;
-  color: #444;
+  color: #0a0f10;
 }
 
 footer a {
-  color: #222;
+  color: #7d99cf;
   text-decoration: underline;
   text-decoration-color: #bbb;
   text-underline-offset: 0.15em;
