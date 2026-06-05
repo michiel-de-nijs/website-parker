@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  background-color: #fff;
+  font-family: system-ui, sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main img {
+  display: block;
+  width: min(90vw, 700px);
+  height: auto;
+}
+
+footer {
+  margin-top: auto;
+  padding: clamp(1.5rem, 4vw, 3rem) clamp(1rem, 5vw, 3rem);
+  text-align: center;
+  font-size: clamp(0.8rem, 1.2vw + 0.5rem, 0.95rem);
+  line-height: 1.6;
+  color: #444;
+}
+
+footer a {
+  color: #222;
+  text-decoration: underline;
+  text-decoration-color: #bbb;
+  text-underline-offset: 0.15em;
+}
+
+footer a:hover {
+  text-decoration-color: #222;
+}
+
+footer a:focus-visible {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
